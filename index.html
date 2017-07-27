@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hubrick test Or Yoffe</title>
+  <link rel="stylesheet" href="styles.css" media="screen" charset="utf-8">
+</head>
+<body>
+  <div class="menu">
+    <a href="index.html">Rules page</a>
+    <a href="execute.html">Execute page</a>
+  </div>
+  <form id="form__addingRule">
+    <h3>Create a rule</h3>
+    <label for="title">Rule title *</label>
+    <input
+      id="title"
+      class="title"
+      type="text"
+      placeholder="Please provide a Title"
+      name="title"
+      required
+      />
+    <label for="ruleId">Rule id *has to be a unique number</label>
+    <input
+      id="ruleId"
+      class="ruleId"
+      type="number"
+      placeholder="Please provide a rule ID"
+      name="ruleId"
+      required
+      />
+    <label for="ruleBody">Rule body *must start with the keyword "function"</label>
+    <textarea
+      id="ruleBody"
+      name="ruleBody"
+      rows="8"
+      cols="80">function someRule(obj){ return !!obj; }</textarea>
+    <label for="passed">If rule passed *can be either a number or null</label>
+    <input
+      id="passed"
+      class="passed"
+      type="text"
+      placeholder="Please provide a passing result"
+      name="passed"
+      required
+      />
+    <label for="failed±">If rule failed *can be either a number or null</label>
+    <input
+      id="failed"
+      class="failed"
+      type="text"
+      placeholder="Please provide a failing result"
+      name="failed"
+      required
+      />
+      <button type="submit" id="addRule">Add new rule</button>
+  </form>
+  <h3>Rules</h3>
+  <div id="ruleList"></div>
+
+  <script src="js/index.js"></script>
+  <script src="js/addRule.js"></script>
+</body>
+</html>

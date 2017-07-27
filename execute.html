@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Execute Hubrick test Or Yoffe</title>
+  <link rel="stylesheet" href="styles.css" media="screen" charset="utf-8">
+</head>
+<body>
+  <div class="menu">
+    <a href="index.html">Rules page</a>
+    <a href="execute.html">Execute page</a>
+  </div>
+  <form id="form__executeFlow">
+    <h3>Execute the flow</h3>
+    <label for="ruleObject">JSON Object</label>
+    <textarea
+      id="ruleObject"
+      name="ruleObject"
+      rows="8"
+      cols="80">Please provide an object *must be a vaslid JSON object</textarea>
+    <button type="submit" id="executeFlow">Execute flow</button>
+  </form>
+  <div id="flowResults"></div>
+
+  <script src="js/index.js" charset="utf-8"></script>
+  <script src="js/execute.js" charset="utf-8"></script>
+</body>
+</html>
